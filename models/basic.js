@@ -1,0 +1,3 @@
+class Basic {
+  id = null;
+}

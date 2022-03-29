@@ -59,6 +59,10 @@ class BasicService {
 
     this.repository.deleteById(id);
   }
+
+  getAll() {
+    return this.repository.getAll();
+  }
 }
 
 module.exports = BasicService;

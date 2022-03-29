@@ -1,6 +1,6 @@
 const BasicService = require('./basic.js');
-const BooksRepository = require('../repositories/books.js');
-const { Book, BookSchema } = require('../models/book.js');
+const { BooksRepository } = require('../repositories/index.js');
+const { Book, BookSchema } = require('../models/index.js');
 
 const booksRepository = new BooksRepository();
 

@@ -1,6 +1,6 @@
 const BasicService = require('./basic.js');
-const UsersRepository = require('../repositories/users.js');
-const { User, UserSchema } = require('../models/user.js');
+const { UsersRepository } = require('../repositories/index.js');
+const { User, UserSchema } = require('../models/index.js');
 
 const usersRepository = new UsersRepository();
 

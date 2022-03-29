@@ -1,6 +1,6 @@
 const BasicService = require('./basic.js');
-const AuthorsRepository = require('../repositories/authors.js');
-const { Author, AuthorSchema } = require('../models/author.js');
+const { AuthorsRepository } = require('../repositories/index.js');
+const { Author, AuthorSchema } = require('../models/index.js');
 
 const authorsRepository = new AuthorsRepository();
 

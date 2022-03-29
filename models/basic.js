@@ -1,3 +1,7 @@
+const { v4: uuid } = require('uuid');
+
 class Basic {
-  id = null;
+  id = uuid();
 }
+
+module.exports = Basic;

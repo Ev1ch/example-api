@@ -1,8 +1,10 @@
-const AuthorsService = require('./services/authors.js');
-const UsersService = require('./services/users.js');
-const UserTypesService = require('./services/user-types.js');
-const BooksService = require('./services/books.js');
-const BookTypesService = require('./services/book-types.js');
+const {
+  AuthorsService,
+  UsersService,
+  UserTypesService,
+  BooksService,
+  BookTypesService,
+} = require('./services/index.js');
 
 const authors = new AuthorsService();
 const users = new UsersService();

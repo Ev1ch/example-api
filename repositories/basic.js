@@ -2,11 +2,11 @@ class BasicRepository {
   constructor() {
     this.data = new Map();
 
-    if (this._instance) {
-      return this._instance;
+    if (BasicRepository._instance) {
+      return BasicRepository._instance;
     }
 
-    this._instance = this;
+    BasicRepository._instance = this;
   }
 
   add(id, model) {

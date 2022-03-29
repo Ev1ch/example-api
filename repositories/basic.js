@@ -29,6 +29,41 @@ class BasicRepository {
   getAll() {
     return this.data.values();
   }
+
+  findOne(query) {
+    const models = this.getAll();
+
+    for (const model of models) {
+      if (this.areEqual(query, model)) {
+        return model;
+      }
+    }
+
+    return null;
+  }
+
+  findAll(query) {
+    const models = this.getAll();
+    const foundModels = [];
+
+    for (const model of models) {
+      if (this.areEqual(query, model)) {
+        foundModels.push(model);
+      }
+    }
+
+    return foundModels;
+  }
+
+  areEqual(query, model) {
+    for (const key in query) {
+      if (query[key] !== model[key]) {
+        return false;
+      }
+    }
+
+    return true;
+  }
 }
 
 module.exports = BasicRepository;

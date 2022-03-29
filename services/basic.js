@@ -63,6 +63,14 @@ class BasicService {
   getAll() {
     return this.repository.getAll();
   }
+
+  findOne(query) {
+    return this.repository.findOne(query);
+  }
+
+  findAll(query) {
+    return this.repository.findAll(query);
+  }
 }
 
 module.exports = BasicService;
